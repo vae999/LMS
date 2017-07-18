@@ -42,6 +42,16 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LMSDAL\LMSDAL.csproj">
+      <Project>{80454920-32e7-4aa5-bedc-a07241cd40db}</Project>
+      <Name>LMSDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LMSModel\LMSModel.csproj">
+      <Project>{ef6b0a37-8fac-4f74-be31-17d8f94b145c}</Project>
+      <Name>LMSModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

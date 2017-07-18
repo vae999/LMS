@@ -40,6 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="lms_admin.cs" />
+    <Compile Include="lms_book.cs" />
+    <Compile Include="lms_category.cs" />
+    <Compile Include="lms_map.cs" />
+    <Compile Include="lms_reder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

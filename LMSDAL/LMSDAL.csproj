@@ -30,6 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Maticsoft.DBUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Maticsoft.DBUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\获取数据库信息\GetDBInfoCommon\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +48,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="lms_admin.cs" />
+    <Compile Include="lms_book.cs" />
+    <Compile Include="lms_category.cs" />
+    <Compile Include="lms_map.cs" />
+    <Compile Include="lms_reder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LMSCommon\LMSCommon.csproj">
+      <Project>{DFE50F5C-79F4-4E4B-97A8-80956BD56E00}</Project>
+      <Name>LMSCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LMSModel\LMSModel.csproj">
+      <Project>{ef6b0a37-8fac-4f74-be31-17d8f94b145c}</Project>
+      <Name>LMSModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

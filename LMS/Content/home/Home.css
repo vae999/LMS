@@ -1,0 +1,10 @@
+﻿* {
+    margin:0;
+    padding:0;
+}
+#login {
+    width: 460px;
+    height: 350px;
+    background-image: url('../../Images/login.png');
+    margin:auto auto;
+}

@@ -8,23 +8,24 @@ namespace LMS.Controllers
 {
     public class HomeController : Controller
     {
+        // GET: Home
         public ActionResult Index()
         {
-            return View();
+            return View("index");
         }
-
-        public ActionResult About()
+        public ActionResult Login()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            string name = Request.Form["name"];
+            string pwd = Request.Form["pwd"];
+            if (name=="hello"&&pwd=="test")
+            {
+                return View("main");
+            }
+            else
+            {
+                throw new Exception("登录失败");
+            }
+           
         }
     }
 }
