@@ -39,6 +39,7 @@
       <HintPath>..\..\获取数据库信息\GetDBInfoCommon\bin\Debug\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,11 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="lms_admin.cs" />
-    <Compile Include="lms_book.cs" />
-    <Compile Include="lms_category.cs" />
-    <Compile Include="lms_map.cs" />
-    <Compile Include="lms_reder.cs" />
+    <Compile Include="LMS_AdminDAL.cs" />
+    <Compile Include="LMS_BookDAL.cs" />
+    <Compile Include="LMS_CategoryDAL.cs" />
+    <Compile Include="LMS_MapDAL.cs" />
+    <Compile Include="LMS_RederDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

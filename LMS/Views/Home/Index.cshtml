@@ -10,6 +10,11 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
     <link href="~/Content/home/Home.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+    
+    </script>
 </head>
 <body>
     <div style="width:100%;height:100%;">
@@ -17,11 +22,14 @@
           图书管理系统
         </div>
         <div id="login">
-            <form  id="flogin" action="/Home/Login" method="post">
-                <input type="text" id="txtname" name="name" style="font-size:20px;margin:73px auto auto 32px; width:400px;height:47px;"/><br />
-                <input type="password" id="txtpwd" name="pwd" style="font-size:20px;margin:63px auto auto 32px; width:400px;height:47px;"/>
+            @using (Ajax.BeginForm("Login", "Home", new AjaxOptions() { Confirm = "您是否要提交吗？", HttpMethod = "Post", InsertionMode = InsertionMode.InsertAfter, UpdateTargetId = "result", OnSuccess = "afterSuccess", LoadingElementId = "loading" }))
+            //@using (Ajax.BeginForm("login","Home",new AjaxOptions() {Confirm="夜阿萨德", HttpMethod="POST",InsertionMode=InsertionMode.Replace} ))
+            {
+                <input type="text" id="txtname" name="name" style="font-size:20px;margin:73px auto auto 32px; width:400px;height:47px;" /><br />
+                <input type="password" id="txtpwd" name="pwd" style="font-size:20px;margin:63px auto auto 32px; width:400px;height:47px;" />
                 <input type="submit" id="submit" name="btnsbmit" value="" style="margin:30px auto auto 30px; width:403px;height:50px; background-color:transparent;" />
-            </form>
+            }
+           
         </div>
         <div style="font-size:70px; color:cyan; text-align:center; width:100%; height:200px;margin-top :30px;">
             welcome to index

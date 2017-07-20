@@ -40,6 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LMS_AdminBLL.cs" />
+    <Compile Include="LMS_BookBLL.cs" />
+    <Compile Include="LMS_CategoryBLL.cs" />
+    <Compile Include="LMS_MapBLL.cs" />
+    <Compile Include="LMS_RederBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
